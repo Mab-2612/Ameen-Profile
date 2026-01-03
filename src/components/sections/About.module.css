@@ -1,0 +1,147 @@
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Desktop: 3 columns, 2 rows */
+@media (min-width: 968px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 260px); /* Slightly taller for better spacing */
+  }
+}
+
+/* Glass Box Base Style */
+.box {
+  background: rgba(20, 20, 20, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.box:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Specific Box Assignments */
+@media (min-width: 968px) {
+  .tall {
+    grid-row: span 2; /* The Stack takes up the middle column */
+  }
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text {
+  color: #999;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Tech Stack Specifics */
+.stackGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.stackItem {
+  background: rgba(59, 130, 246, 0.1);
+  padding: 8px 16px;
+  border-radius: 100px; /* Pill shape is more modern */
+  color: #93c5fd;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* NEW: Services List Styles */
+.serviceList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* NEW: Stats Styles */
+.statsContainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+}
+
+.statLabel {
+  color: #666;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 5px;
+}
+
+/* ... keep your existing .box, .grid, .tall styles ... */
+
+/* Add these new styles for the list inside "My Approach" */
+.focusList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.focusItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 8px;
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.focusItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
