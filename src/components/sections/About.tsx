@@ -52,6 +52,7 @@ export default function About() {
             <span className={styles.stackItem}>Framer Motion</span>
             <span className={styles.stackItem}>Git</span>
             <span className={styles.stackItem}>Github</span>
+            <span className={styles.stackItem}>API</span>
           </div>
         </motion.div>
 

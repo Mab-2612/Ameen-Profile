@@ -133,7 +133,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        <span>© 2026 DevFolio. All rights reserved.</span>
+        <span>© 2026 Ameen. All rights reserved.</span>
         <span>Designed & Built with Next.js</span>
       </div>
     </footer>

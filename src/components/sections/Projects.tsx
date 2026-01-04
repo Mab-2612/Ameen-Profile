@@ -16,17 +16,17 @@ const projects = [
   },
   {
     title: "School Portal Dashboard",
-    description: "Comprehensive dashboard for educational institutions managing payments, students, and grading.",
+    description: "Comprehensive dashboard for an educational institution managing payments, students, and grading.",
     tags: ["Next.js", "Supabase", "Tailwind"],
-    image: "/project2.png",
-    link: "https://academic-apex-hub.vercel.app/"
+    image: "/project5.png",
+    link: "https://al-adab.vercel.app/"
   },
   {
-    title: "Geo-Spatial Mapping Tool",
-    description: "Interactive mapping solution with custom geolocation logic and UI controls using Mapbox GL.",
-    tags: ["React", "Mapbox", "GeoJSON"],
+    title: "UI-Navigator",
+    description: "Interactive mapping solution with custom geolocation logic and UI controls using MapLibre",
+    tags: ["React", "MapLibre", "GeoJSON", "MongoDB"],
     image: "/project3.png",
-    link: "#"
+    link: "https://ui-map-dusky.vercel.app/"
   },  
   {
     title: "Geegstck E-Commerce",
@@ -36,11 +36,11 @@ const projects = [
     link: "https://geesgstack-full-stack.vercel.app"
   },
   {
-    title: "Geegstack E-Commerce",
-    description: "A digital storefront for various sellers, offering diverse categories like electronics, beauty, fashion, home goods, and more",
+    title: "Academic Hub",
+    description: "A Website built to enhance students learning journey with optimal curriculum",
     tags: ["React", "MongoDB", "JavaScript"],
-    image: "/project5.png",
-    link: "https://naijalangtranslator.vercel.app/"
+    image: "/project2.png",
+    link: "https://academic-apex-hub.vercel.app/"
   },
   {
     title: "Focusflow App",
