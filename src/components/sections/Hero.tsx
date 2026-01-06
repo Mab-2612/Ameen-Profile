@@ -84,16 +84,16 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
           >
             {/* ... your existing social links ... */}
-            <Link href="https://github.com/YOUR_USERNAME" target="_blank" className={styles.socialIcon}>
+            <Link href="https://github.com/Mab-2612" target="_blank" className={styles.socialIcon}>
               <Github size={20} />
             </Link>
-            <Link href="https://twitter.com/YOUR_USERNAME" target="_blank" className={styles.socialIcon}>
+            <Link href="https://x.com/MikailAmeen" target="_blank" className={styles.socialIcon}>
               <Twitter size={20} />
             </Link>
-            <Link href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" className={styles.socialIcon}>
+            <Link href="https://facebook.com/ameen2612" target="_blank" className={styles.socialIcon}>
               <Facebook size={20} />
             </Link>
-            <Link href="https://wa.me/2348012345678" target="_blank" className={styles.socialIcon}>
+            <Link href="https://wa.me/2348153338723" target="_blank" className={styles.socialIcon}>
               <WhatsAppIcon size={20} /> 
             </Link>
           </motion.div>
