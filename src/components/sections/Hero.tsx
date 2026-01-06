@@ -20,6 +20,8 @@ const WhatsAppIcon = ({ size = 20, className }: { size?: number, className?: str
   </svg>
 );
 
+/* ... existing imports ... */
+
 export default function Hero() {
   return (
     <section className={styles.section}>
@@ -28,6 +30,7 @@ export default function Hero() {
       <div className={styles.container}>
         {/* Left Side: Text */}
         <div className={styles.content}>
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -38,11 +41,23 @@ export default function Hero() {
             Available for Hire
           </motion.div>
 
+          {/* --- NEW NAME SECTION --- */}
+          <motion.span
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ delay: 0.1 }}
+            className={styles.name}
+          >
+            Hi, I'm Mikail Ameen 👋
+          </motion.span>
+          {/* ------------------------ */}
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.2 }}
             className={styles.title}
           >
             I build digital <br />
@@ -53,32 +68,32 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
             className={styles.description}
           >
             Fullstack Developer specializing in modern web technologies. 
             I turn complex problems into simple, beautiful, and intuitive interface designs.
           </motion.p>
 
-          {/* Social Links */}
+          {/* Social Links (Make sure you kept your updated WhatsApp icon here!) */}
           <motion.div 
             className={styles.socials}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.4 }}
           >
-            <Link href="https://github.com/Mab-2612" target="_blank" className={styles.socialIcon}>
+            {/* ... your existing social links ... */}
+            <Link href="https://github.com/YOUR_USERNAME" target="_blank" className={styles.socialIcon}>
               <Github size={20} />
             </Link>
-            <Link href="https://x.com/MikailAmeen" target="_blank" className={styles.socialIcon}>
+            <Link href="https://twitter.com/YOUR_USERNAME" target="_blank" className={styles.socialIcon}>
               <Twitter size={20} />
             </Link>
-            <Link href="https://facebook.com/ameen2612" target="_blank" className={styles.socialIcon}>
+            <Link href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" className={styles.socialIcon}>
               <Facebook size={20} />
             </Link>
-            {/* Custom WhatsApp Icon */}
-            <Link href="https://wa.me/2348153338723" target="_blank" className={styles.socialIcon}>
+            <Link href="https://wa.me/2348012345678" target="_blank" className={styles.socialIcon}>
               <WhatsAppIcon size={20} /> 
             </Link>
           </motion.div>
@@ -88,7 +103,7 @@ export default function Hero() {
              initial={{ opacity: 0, y: 20 }}
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: false }}
-             transition={{ delay: 0.4 }}
+             transition={{ delay: 0.5 }}
           >
             <Link href="mailto:mikailameen2612@gmail.com" className={styles.primaryBtn}>
               Contact Me <Mail size={16} />
@@ -107,7 +122,7 @@ export default function Hero() {
           <div className={styles.glassFrame}>
             <Image 
               src="/profile.png" 
-              alt="My Profile" 
+              alt="Mikail Ameen" 
               fill 
               className={styles.profileImage}
             />
