@@ -25,8 +25,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
+  justify-content: center;
 }
 
 /* The Ultra-Glass Card */
@@ -123,4 +124,20 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
   color: #ccc;
   border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1rem; /* Less padding on mobile sides */
+  }
+  
+  .grid {
+    grid-template-columns: 1fr; /* Force single column on mobile */
+    gap: 2rem;
+  }
+  
+  .card {
+    max-width: 400px; /* Prevents cards from getting comically wide on tablets */
+    margin: 0 auto;   /* Centers the card itself */
+  }
 }
