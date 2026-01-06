@@ -29,7 +29,7 @@ const projects = [
     link: "https://ui-map-dusky.vercel.app/"
   },  
   {
-    title: "Geegstck E-Commerce",
+    title: "Geegstack E-Commerce",
     description: "A digital storefront for various sellers, offering diverse categories like electronics, beauty, fashion, home goods, and more",
     tags: ["React", "MongoDB", "JavaScript"],
     image: "/project4.png",
@@ -44,9 +44,9 @@ const projects = [
   },
   {
     title: "Focusflow App",
-    description: "A digital storefront for various sellers, offering diverse categories like electronics, beauty, fashion, home goods, and more",
+    description: "A productivity app combining focus timers, task management, and analytics to boost efficiency.",
     tags: ["React", "Supabase", "Tailwind", "TypeScript"],
-    image: "/project6.png",
+    image: "/image.png",
     link: "https://focusflow-9d6l.vercel.app/"
   },
 ];

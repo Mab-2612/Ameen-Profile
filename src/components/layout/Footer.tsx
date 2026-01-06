@@ -90,7 +90,7 @@ export default function Footer() {
             <input 
               type="text" 
               name="name" 
-              placeholder="John Doe" 
+              placeholder="your name" 
               className={styles.input} 
               value={formData.name}
               onChange={handleChange}
